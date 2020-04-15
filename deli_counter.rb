@@ -28,7 +28,7 @@ def line(katz_deli_line)
     katz_deli_line.each_with_index do |maybe, index|
       current.push("#{index + 1}. #{maybe}")
     end
-    puts("The line is currently: #{current}.")
+    puts("The line is currently: #{current.text}.")
   elsif(katz_deli_line.length == 0)
     puts("The line is currently empty.")
   end
