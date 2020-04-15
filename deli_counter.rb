@@ -26,7 +26,7 @@ def line(katz_deli_line)
   current = []
   if(katz_deli_line != 0)
     katz_deli_line.each_with_index do |maybe, index|
-      current.push("#{index + 1}. #{maybe}, ")
+      current.push("#{index + 1}. #{maybe}")
     end
     puts("The line is currently: #{current}.")
   elsif(katz_deli_line.length == 0)
